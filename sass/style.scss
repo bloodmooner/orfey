@@ -12,8 +12,14 @@
 
 
 
-
-
+@import 'base/promo';
+@import 'base/about';
+@import 'base/advantages';
+@import 'base/workwith';
+@import 'base/cert';
+@import 'base/tech';
+@import 'base/contacts';
+@import 'base/services';
 
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
@@ -67,7 +73,7 @@ margin: 0;
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1620px;
   width: 100%;
   margin: 0 auto;
   position: relative;
