@@ -499,6 +499,12 @@ template {
   margin-left: 0;
 }
 
+@media (max-width: 1650px) {
+  .footer__item {
+    margin-left: 35px;
+  }
+}
+
 .footer__link {
   font-style: normal;
   font-weight: 400;
@@ -604,6 +610,12 @@ template {
   width: 100%;
   height: 2px;
   background-color: #4164F7;
+}
+
+@media (max-width: 1650px) {
+  .header__item {
+    margin-left: 50px;
+  }
 }
 
 .header__link {
@@ -754,6 +766,12 @@ template {
   margin-top: 0;
 }
 
+@media (max-width: 1650px) {
+  .about__text {
+    max-width: 730px;
+  }
+}
+
 .advantages {
   padding: 60px 0 80px 0;
 }
@@ -802,6 +820,13 @@ template {
       grid-template-columns: repeat(4, 383px);
   grid-auto-rows: 303px;
   gap: 30px;
+}
+
+@media (max-width: 1650px) {
+  .advantages__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .advantages__item {
@@ -867,6 +892,12 @@ template {
      object-fit: cover;
 }
 
+@media (max-width: 1650px) {
+  .workwith__image {
+    max-width: 880px;
+  }
+}
+
 .workwith__card {
   position: absolute;
   right: 0;
@@ -880,6 +911,13 @@ template {
   -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
   border-radius: 27px;
+}
+
+@media (max-width: 1650px) {
+  .workwith__card {
+    max-width: 630px;
+    padding: 56px 56px;
+  }
 }
 
 .workwith__title {
@@ -980,13 +1018,35 @@ template {
   margin: 0 65px;
 }
 
+@media (max-width: 1650px) {
+  .cert__slider .slick-slide {
+    margin: 0 20px;
+  }
+}
+
 .cert__slider .slick-list {
   margin: 0 -65px;
+}
+
+@media (max-width: 1650px) {
+  .cert__slider .slick-list {
+    margin: 0 -20px;
+  }
 }
 
 .cert__item {
   max-width: 275px;
   width: 100%;
+}
+
+.cert__item img {
+  width: 100%;
+}
+
+@media (max-width: 1650px) {
+  .cert__item {
+    max-width: 100%;
+  }
 }
 
 .cert__arrow {
@@ -999,8 +1059,20 @@ template {
   left: -60px;
 }
 
+@media (max-width: 1650px) {
+  .cert__arrow_left {
+    left: -30px;
+  }
+}
+
 .cert__arrow_right {
   right: -60px;
+}
+
+@media (max-width: 1650px) {
+  .cert__arrow_right {
+    right: -30px;
+  }
 }
 
 .tech {
@@ -1382,9 +1454,9 @@ input, button, textarea {
   position: relative;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1650px) {
   .container {
-    max-width: 1150px;
+    max-width: 1100px;
   }
 }
 

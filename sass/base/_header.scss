@@ -31,7 +31,7 @@
         &_active {
             position: relative;
             &::after {
-                content:: '';
+                content: '';
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -39,6 +39,9 @@
                 height: 2px;
                 background-color: #4164F7;
             }
+        }
+        @include for-desk {
+            margin-left: 50px;
         }
     }
 

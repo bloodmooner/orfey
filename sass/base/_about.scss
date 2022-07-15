@@ -47,5 +47,8 @@
                 margin-top: 0;
             }
         }
+        @include for-desk {
+            max-width: 730px;
+        }
     }
 }

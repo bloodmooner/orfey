@@ -42,12 +42,19 @@
           /* the slides */
         .slick-slide {
             margin: 0 65px;
+            @include for-desk {
+                margin: 0 20px;
+            }
         }
 
         /* the parent */
         .slick-list {
             margin: 0 -65px;
+            @include for-desk {
+                margin: 0 -20px;
+            }
         }
+
     }
 
     &__items {
@@ -56,6 +63,12 @@
     &__item {
         max-width: 275px;
         width: 100%;
+        img {
+            width: 100%;
+        }
+        @include for-desk {
+            max-width: 100%;
+        }
     }
 
     &__arrows {
@@ -67,10 +80,16 @@
         cursor: pointer;
         &_left {
             left: -60px;
+            @include for-desk {
+                left: -30px;
+            }
         }
 
         &_right {
             right: -60px;
+            @include for-desk {
+                right: -30px;
+            }
         }
     }
 }
