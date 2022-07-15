@@ -1,8 +1,47 @@
 .promo {
     position: relative;
     max-width: 1920px;
-    max-height: 965px;
-    height: 100%;
+    height: 965px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &_index {
+        background-image: url('../../assets/img/index/promo-img.png');
+    }
+
+    &_services {
+        height: 685px;
+        background-image: url('../../assets/img/services/service-bg.png');
+        .container {
+            height: 685px;
+        }
+    }
+
+    &_contacts {
+        height: 685px;
+        background-image: url('../../assets/img/contacts/contacts-bg.png');
+        .container {
+            height: 685px;
+        }
+    }
+
+    &_tech {
+        height: 685px;
+        background-image: url('../../assets/img/technique/tech-bg.png');
+        .container {
+            height: 685px;
+        }
+    }
+
+    &_projects {
+        height: 685px;
+        background-image: url('../../assets/img/projects/projects-bg.png');
+        .container {
+            height: 685px;
+        }
+    }
+
 
     &__bg {
         width: 100%;
@@ -19,6 +58,7 @@
         position: absolute;
         left: 0;
         top: 50%;
+        transform: translateY(-50%);
         font-style: normal;
         font-weight: 600;
         font-size: 55px;

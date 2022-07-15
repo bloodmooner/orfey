@@ -621,8 +621,50 @@ template {
 .promo {
   position: relative;
   max-width: 1920px;
-  max-height: 965px;
-  height: 100%;
+  height: 965px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.promo_index {
+  background-image: url("../../assets/img/index/promo-img.png");
+}
+
+.promo_services {
+  height: 685px;
+  background-image: url("../../assets/img/services/service-bg.png");
+}
+
+.promo_services .container {
+  height: 685px;
+}
+
+.promo_contacts {
+  height: 685px;
+  background-image: url("../../assets/img/contacts/contacts-bg.png");
+}
+
+.promo_contacts .container {
+  height: 685px;
+}
+
+.promo_tech {
+  height: 685px;
+  background-image: url("../../assets/img/technique/tech-bg.png");
+}
+
+.promo_tech .container {
+  height: 685px;
+}
+
+.promo_projects {
+  height: 685px;
+  background-image: url("../../assets/img/projects/projects-bg.png");
+}
+
+.promo_projects .container {
+  height: 685px;
 }
 
 .promo__bg {
@@ -641,6 +683,8 @@ template {
   position: absolute;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-style: normal;
   font-weight: 600;
   font-size: 55px;
@@ -874,6 +918,13 @@ template {
   font-size: 16px;
   line-height: 19px;
   color: #4164F7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.workwith__btn:hover {
+  background-color: #4164F7;
+  color: #FFFFFF;
 }
 
 .cert {
@@ -1050,7 +1101,6 @@ template {
 }
 
 .services__tabs-container {
-  padding-bottom: 24px;
   border-bottom: 2px solid #ECECEC;
 }
 
@@ -1064,6 +1114,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.services__tab {
+  padding-bottom: 24px;
 }
 
 .services__tab p {
@@ -1082,7 +1136,7 @@ template {
 .services__tab_active::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 8px;
@@ -1117,11 +1171,24 @@ template {
 }
 
 .services__tab-listitem {
+  position: relative;
+  padding-left: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
   color: #646464;
+}
+
+.services__tab-listitem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #4164F7;
 }
 
 /*
