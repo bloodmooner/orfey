@@ -3,13 +3,18 @@
     padding: 100px 0 72px 0;
     &__wrapper {
         margin-right: 140px;
-        
+        @include for-desk {
+            margin-right: 0;
+        }
     }
 
     &__content {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include for-tablet-landscape {
+            flex-direction: column;
+        }
     }
 
     &__title {
@@ -48,7 +53,11 @@
             }
         }
         @include for-desk {
-            max-width: 730px;
+            max-width: 840px;
+        }
+        @include for-tablet-landscape {
+            margin-top: 20px;
+            max-width: 100%;
         }
     }
 }

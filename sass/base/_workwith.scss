@@ -6,6 +6,10 @@
 
     &__content {
         position: relative;
+        @include for-tablet-landscape {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 
     &__image {
@@ -16,6 +20,11 @@
         object-fit: cover;
         @include for-desk {
             max-width: 880px;
+        }
+        @include for-tablet-landscape {
+            margin-top: 23px;
+            max-width: 100%;
+            border-radius: 27px;
         }
     }
 
@@ -33,6 +42,12 @@
         @include for-desk {
             max-width: 630px;
             padding: 56px 56px;
+        }
+        @include for-tablet-landscape {
+            position: relative;
+            max-width: 100%;
+            top: 0;
+            transform: translateY(0);
         }
     }
 

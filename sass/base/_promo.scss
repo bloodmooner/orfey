@@ -8,6 +8,9 @@
 
     &_index {
         background-image: url('../../assets/img/index/promo-img.png');
+        @include for-tablet-landscape {
+            height: 685px;
+        }
     }
 
     &_services {

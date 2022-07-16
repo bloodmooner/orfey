@@ -17,6 +17,9 @@
     }
 
     &__nav {
+        @include for-tablet-landscape {
+            display: none;
+        }
     }
 
     &__items {
@@ -55,5 +58,20 @@
 
     &__dropdown {
         margin-left: 115px;
+    }
+
+    &__burger {
+        display: none;
+        margin-left: 29px;
+        justify-content: center;
+        align-items: center;
+        background: #4164F7;
+        border-radius: 100%;
+        width: 49px;
+        height: 49px;
+        cursor: pointer;
+        @include for-tablet-landscape {
+            display: flex;
+        }
     }
 }
