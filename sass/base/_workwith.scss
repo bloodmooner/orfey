@@ -26,6 +26,10 @@
             max-width: 100%;
             border-radius: 27px;
         }
+        @include for-phone-portrait {
+            margin-top: 20px;
+            max-height: 460px;
+        }
     }
 
     &__card {
@@ -49,6 +53,9 @@
             top: 0;
             transform: translateY(0);
         }
+        @include for-tablet-portrait {
+            padding: 40px 80px 40px 80px;
+        }
     }
 
     &__title {
@@ -58,6 +65,11 @@
         font-size: 30px;
         line-height: 36px;
         color: #292929;
+        @include for-phone-portrait {
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 22px;
+        }
     }
 
     &__list {
@@ -68,6 +80,9 @@
         &:nth-child(1) {
             margin-top: 0;
         }
+        @include for-phone-portrait {
+            margin-top: 21px;
+        }
     }
 
     &__text {
@@ -76,6 +91,10 @@
         font-size: 20px;
         line-height: 27px;
         color: #646464;
+        @include for-phone-portrait {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 
     &__btn {
@@ -93,6 +112,10 @@
         &:hover {
             background-color: #4164F7;
             color: #FFFFFF;
+        }
+        @include for-phone-portrait {
+            margin-top: 35px;
+            padding: 16px 20px;
         }
     }
 }

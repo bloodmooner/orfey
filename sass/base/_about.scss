@@ -1,6 +1,12 @@
 .about {
     background: #F5F8FF;
     padding: 100px 0 72px 0;
+    @include for-tablet-portrait {
+        padding: 40px 0 50px 0;
+    }
+    @include for-phone-portrait {
+        padding: 30px 0 40px 0;
+    }
     &__wrapper {
         margin-right: 140px;
         @include for-desk {
@@ -36,6 +42,12 @@
             background: #4164F7;
             border-radius: 2px;
         }
+        @include for-tablet-portrait {
+            font-size: 36px;
+        }
+        @include for-phone-portrait {
+            font-size: 27px;
+        }
     }
 
     &__text {
@@ -50,6 +62,9 @@
             color: #646464;
             &:nth-child(1) {
                 margin-top: 0;
+            }
+            @include for-tablet-portrait {
+                font-size: 18px;
             }
         }
         @include for-desk {

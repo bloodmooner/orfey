@@ -91,11 +91,11 @@ margin: 0;
   }
   @include for-tablet-portrait {
     max-width: 100%;
-    padding: 0 36px;
+    padding: 0 24px;
   }
   @include for-phone {
     max-width: 100%;
-    padding: 0 19px;
+    padding: 0 15px;
   }
 }
 .thanks-or-error__container {

@@ -1232,6 +1232,18 @@ template {
   padding: 100px 0 72px 0;
 }
 
+@media (max-width: 991px) {
+  .about {
+    padding: 40px 0 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: 30px 0 40px 0;
+  }
+}
+
 .about__wrapper {
   margin-right: 140px;
 }
@@ -1285,6 +1297,18 @@ template {
   border-radius: 2px;
 }
 
+@media (max-width: 991px) {
+  .about__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__title {
+    font-size: 27px;
+  }
+}
+
 .about__text {
   max-width: 1210px;
   width: 100%;
@@ -1301,6 +1325,12 @@ template {
 
 .about__text p:nth-child(1) {
   margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .about__text p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 1650px) {
@@ -1320,6 +1350,18 @@ template {
   padding: 60px 0 80px 0;
 }
 
+@media (max-width: 991px) {
+  .advantages {
+    padding: 60px 0 55px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding: 30px 0 40px 0;
+  }
+}
+
 .advantages__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1334,6 +1376,18 @@ template {
   line-height: 130%;
   text-transform: uppercase;
   color: #424242;
+}
+
+@media (max-width: 991px) {
+  .advantages__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__title {
+    font-size: 27px;
+  }
 }
 
 .advantages__title_first {
@@ -1373,6 +1427,14 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .advantages__items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+}
+
 .advantages__item {
   border: 1px solid #ECECEC;
   border-radius: 27px;
@@ -1392,6 +1454,12 @@ template {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .advantages__content {
+    padding: 26px 26px 26px 26px;
+  }
+}
+
 .advantages__rounded {
   width: 131px;
   height: 131px;
@@ -1408,6 +1476,13 @@ template {
   background: #F1F5FF;
 }
 
+@media (max-width: 767px) {
+  .advantages__rounded {
+    width: 101px;
+    height: 101px;
+  }
+}
+
 .advantages__name {
   margin-top: 20px;
   font-style: normal;
@@ -1416,6 +1491,15 @@ template {
   line-height: 25px;
   text-align: center;
   color: #292929;
+}
+
+@media (max-width: 767px) {
+  .advantages__name {
+    max-width: 250px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .workwith {
@@ -1462,6 +1546,13 @@ template {
   }
 }
 
+@media (max-width: 767px) {
+  .workwith__image {
+    margin-top: 20px;
+    max-height: 460px;
+  }
+}
+
 .workwith__card {
   position: absolute;
   right: 0;
@@ -1494,6 +1585,12 @@ template {
   }
 }
 
+@media (max-width: 991px) {
+  .workwith__card {
+    padding: 40px 80px 40px 80px;
+  }
+}
+
 .workwith__title {
   margin-bottom: 33px;
   font-style: normal;
@@ -1501,6 +1598,14 @@ template {
   font-size: 30px;
   line-height: 36px;
   color: #292929;
+}
+
+@media (max-width: 767px) {
+  .workwith__title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 22px;
+  }
 }
 
 .workwith__item {
@@ -1511,12 +1616,25 @@ template {
   margin-top: 0;
 }
 
+@media (max-width: 767px) {
+  .workwith__item {
+    margin-top: 21px;
+  }
+}
+
 .workwith__text {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
   color: #646464;
+}
+
+@media (max-width: 767px) {
+  .workwith__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .workwith__btn {
@@ -1537,6 +1655,13 @@ template {
 .workwith__btn:hover {
   background-color: #4164F7;
   color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .workwith__btn {
+    margin-top: 35px;
+    padding: 16px 20px;
+  }
 }
 
 .cert {
@@ -2044,14 +2169,14 @@ input, button, textarea {
 @media (max-width: 991px) {
   .container {
     max-width: 100%;
-    padding: 0 36px;
+    padding: 0 24px;
   }
 }
 
 @media (max-width: 575px) {
   .container {
     max-width: 100%;
-    padding: 0 19px;
+    padding: 0 15px;
   }
 }
 
