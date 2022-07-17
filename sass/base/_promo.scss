@@ -1,13 +1,13 @@
 .promo {
     position: relative;
     max-width: 1920px;
-    height: 965px;
+    height: 685px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
     &_index {
-        background-image: url('../../assets/img/index/promo-img.png');
+        background-image: url('../assets/img/index/promo-img.png');
         @include for-tablet-landscape {
             height: 685px;
         }
@@ -18,7 +18,7 @@
 
     &_services {
         height: 685px;
-        background-image: url('../../assets/img/services/service-bg.png');
+        background-image: url('../assets/img/services/service-bg.png');
         .container {
             height: 685px;
             @include for-tablet-portrait {
@@ -32,7 +32,7 @@
 
     &_contacts {
         height: 685px;
-        background-image: url('../../assets/img/contacts/contacts-bg.png');
+        background-image: url('../assets/img/contacts/contacts-bg.png');
         .container {
             height: 685px;
             @include for-tablet-portrait {
@@ -46,7 +46,7 @@
 
     &_tech {
         height: 685px;
-        background-image: url('../../assets/img/technique/tech-bg.png');
+        background-image: url('../assets/img/technique/tech-bg.png');
         .container {
             height: 685px;
             @include for-tablet-portrait {
@@ -60,7 +60,7 @@
 
     &_projects {
         height: 685px;
-        background-image: url('../../assets/img/projects/projects-bg.png');
+        background-image: url('../assets/img/projects/projects-bg.png');
         .container {
             height: 685px;
             @include for-tablet-portrait {

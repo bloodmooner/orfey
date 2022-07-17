@@ -127,22 +127,23 @@
     <!-- Main Start -->
     <main class="main">
 
-      <section class="services">
+      <section class="services tabs">
         <div class="container">
             <div class="services__wrapper">
                 <div class="services__content">
                     <div class="services__tabs-container">
-                        <div class="services__tabs">
-                            <div class="services__tab services__tab_active">
+                        <ul class="services__tabs">
+                            <li class="services__tab services__tab_active active">
                                 <p>Коксохимия</p>
-                            </div>
-                            <div class="services__tab">
+                            </li>
+                            <li class="services__tab">
                                 <p>Металлургия</p>
-                            </div>
-                        </div>
+                            </li>                            
+                        </ul>
+                        <div class="selector"></div>
                     </div>
                     
-                    <div class="services__tab-list">
+                    <div class="services__tab-list close open">
                         <div class="services__tab-item">
                             <div class="services__tab-stage">
                                 <div class="services__tab-header">
@@ -169,6 +170,188 @@
                                         </li>
                                         <li class="services__tab-listitem">
                                             Разработка инвесторской сметы, ведомсоти ресурсов на согласованный объем работ
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__tab-item">
+                            <div class="services__tab-stage">
+                                <div class="services__tab-header">
+                                    <h3 class="services__tab-name">
+                                      Ремонт кладки коксовых батарей
+                                    </h3>
+                                    <div class="services__tab-icon">
+                                        <img src="assets/svg/services-plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services__tab-body">
+                                    <ul class="services__tab-list">
+                                        <li class="services__tab-listitem">
+                                          Перекладка крайних вертикалов отопительных простенков
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                          Перекладка косоходной зоны и зоны регенераторов, замена насадки
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                          Полная перекладка отопительных простенков
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                          Пуско-наладочные работы и ввод в эксплуатацию переложенных простенков
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__tab-item">
+                            <div class="services__tab-stage">
+                                <div class="services__tab-header">
+                                    <h3 class="services__tab-name">
+                                      Ремонт армирующего оборудования коксовых батарей
+                                    </h3>
+                                    <div class="services__tab-icon">
+                                        <img src="assets/svg/services-plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services__tab-body">
+                                    <ul class="services__tab-list">
+                                        <li class="services__tab-listitem">
+                                            Рихтовка, замена анкерных колонн
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена армирующих рам
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена армирующих броней
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена и ремонт верхних поперечных анкерных стяжек
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена, ревизия узлов армирования простенков
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__tab-item">
+                            <div class="services__tab-stage">
+                                <div class="services__tab-header">
+                                    <h3 class="services__tab-name">
+                                        Текущие ремонты
+                                    </h3>
+                                    <div class="services__tab-icon">
+                                        <img src="assets/svg/services-plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services__tab-body">
+                                    <ul class="services__tab-list">
+                                        <li class="services__tab-listitem">
+                                            Торкретирование, подливка подов, устранение прогаров и раковин в подах и стенах печных камер
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Ремонт кладки головок над бронями и под бронями
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Изоляция и уплотнение фасадных стен регенераторов
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Очистка и продувка насадки регенераторов
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Изоляция газовоздушных клапанов и уплотнение переходных патрубков
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Ремонт дверей камер коксования
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Ремонт и замена газоподводящей и газоотводящей арматуры
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__tab-item">
+                            <div class="services__tab-stage">
+                                <div class="services__tab-header">
+                                    <h3 class="services__tab-name">
+                                        Ремонт верхнего строения коксовых батарей
+                                    </h3>
+                                    <div class="services__tab-icon">
+                                        <img src="assets/svg/services-plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services__tab-body">
+                                    <ul class="services__tab-list">
+                                        <li class="services__tab-listitem">
+                                            Ремонт выстилки верха коксовых батарей
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена кирпичей смотровых лючков
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена загрузочных и газовых люков
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Огнеупорные работы при замене анкерных стяжек
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__tab-item">
+                            <div class="services__tab-stage">
+                                <div class="services__tab-header">
+                                    <h3 class="services__tab-name">
+                                        Монтаж технологического оборудования и металлоконструкций
+                                    </h3>
+                                    <div class="services__tab-icon">
+                                        <img src="assets/svg/services-plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services__tab-body">
+                                    <ul class="services__tab-list">
+                                        <li class="services__tab-listitem">
+                                            Сборка, ремонт и ввод в эксплуатацию коксовых машин
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Замена металлоконструкций обслуживающих площадок коксовых батарей
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Ремонт сатураторных установок и оборудования вспомогательных цехов
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__tab-list close">
+                        <div class="services__tab-item">
+                            <div class="services__tab-stage">
+                                <div class="services__tab-header">
+                                    <h3 class="services__tab-name">
+                                        Ремонт и капитальное строительство печного оборудования
+                                    </h3>
+                                    <div class="services__tab-icon">
+                                        <img src="assets/svg/services-plus.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="services__tab-body">
+                                    <ul class="services__tab-list">
+                                        <li class="services__tab-listitem">
+                                            Методические печи
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Известковые печи
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Воздухонагреватели
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Ремонт доменной печи
+                                        </li>
+                                        <li class="services__tab-listitem">
+                                            Нагревательные колодцы
                                         </li>
                                     </ul>
                                 </div>

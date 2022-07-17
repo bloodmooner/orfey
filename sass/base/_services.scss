@@ -1,102 +1,123 @@
 .services {
     margin-top: 80px;
     margin-bottom: 100px;
-    &__wrapper {
-    }
+}
+.services__wrapper {
+}
+.services__content {
+    
+}
+.services__tabs-container {
+    position: relative;
+    border-bottom: 2px solid #ECECEC;
+}
+.services__tabs-container .selector {
+    position: absolute;
+	bottom: -5px;
+	left: 0;
+	z-index: 1;
+	width: 220px;
+	height: 8px;
+	background: #4164F7;
+	border-radius: 39px;
+	transition: .3s ease-in-out;
+}
+.services__tabs {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.services__tab {
+    padding-bottom: 24px;
+    cursor: pointer;
 
-    &__content {
-    }
-
-    &__tabs-container {
-        border-bottom: 2px solid #ECECEC;
-    }
-
-    &__tabs {
-        max-width: 1000px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-
-    &__tab {
-        padding-bottom: 24px;
-        p {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 30px;
-            line-height: 41px;
-            text-transform: uppercase;
-            color: #424242; 
-        }
-        &_active {
-            position: relative;
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 100%;
-                height: 8px;
-                background: #4164F7;
-                border-radius: 39px;
-            }
-        }
-    }
-
-    &__tab-list {
-        margin-top: 25px;
-    }
-
-    &__tab-item {
-    }
-
-    &__tab-stage {
-    }
-
-    &__tab-header {
-        margin-top: 35px;
-        margin-bottom: 35px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__tab-name {
+    p {
         font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 30px;
-        color: #424242;
-    }
-
-    &__tab-icon {
-
-        &_active {
-        }
-    }
-
-    &__tab-body {
-    }
-
-    &__tab-listitem {
-        position: relative;
-        padding-left: 20px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 130%;
-        color: #646464;
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 9px;
-            width: 5px;
-            height: 5px;
-            border-radius: 100%;
-            background: #4164F7;
-        }
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #424242; 
     }
 }
+
+.services__tab-list {
+    display: block;
+}
+.services__tab-list.close {
+    display: none;
+}
+.services__tab-list.open {
+    display: block;
+}
+.services__tab-item {
+    margin-top: 15px;
+    padding: 45px 0;
+    border-bottom: 2px solid #ECECEC;
+}
+.services__tab-stage {
+}
+.services__tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.services__tab-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #424242;
+}
+.services__tab-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    background: #F1F5FF;
+    border-radius: 50%;
+
+    img {
+        transition: all 0.5s;
+    }
+    
+}
+.services__tab-icon_active {
+    img {
+        transform: rotate(45deg);
+    }
+}
+.services__tab-body {
+    display: none;
+    margin-top: 35px;
+}
+.services__tab-listitem {
+    position: relative;
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #646464;
+    margin-top: 10px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: #4164F7;
+    }
+}
+
