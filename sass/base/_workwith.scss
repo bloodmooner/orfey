@@ -1,7 +1,42 @@
 .workwith {
     background: #F5F8FF;
     padding: 180px 0 145px 0;
+    @include for-tablet-portrait {
+        padding: 37px 0 70px 0;
+    }
+    @include for-phone-portrait {
+        padding: 31px 0 70px 0;
+    }
     &__wrapper {
+    }
+
+    &__title-main {
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #424242;
+        @include for-phone-portrait {
+            margin-bottom: 30px;
+            font-size: 27px;
+            padding-left: 12px;
+        }
+        &::before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #4164F7;
+            border-radius: 2px;
+        }
     }
 
     &__content {
@@ -55,6 +90,9 @@
         }
         @include for-tablet-portrait {
             padding: 40px 80px 40px 80px;
+        }
+        @include for-phone-portrait {
+            padding: 33px 17px;
         }
     }
 

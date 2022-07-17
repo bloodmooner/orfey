@@ -11,6 +11,9 @@
         @include for-tablet-landscape {
             height: 685px;
         }
+        @include for-tablet-portrait {
+            height: 412px;
+        }
     }
 
     &_services {
@@ -18,6 +21,12 @@
         background-image: url('../../assets/img/services/service-bg.png');
         .container {
             height: 685px;
+            @include for-tablet-portrait {
+                height: 412px;
+            }
+        }
+        @include for-tablet-portrait {
+            height: 412px;
         }
     }
 
@@ -26,6 +35,12 @@
         background-image: url('../../assets/img/contacts/contacts-bg.png');
         .container {
             height: 685px;
+            @include for-tablet-portrait {
+                height: 412px;
+            }
+        }
+        @include for-tablet-portrait {
+            height: 412px;
         }
     }
 
@@ -34,6 +49,12 @@
         background-image: url('../../assets/img/technique/tech-bg.png');
         .container {
             height: 685px;
+            @include for-tablet-portrait {
+                height: 412px;
+            }
+        }
+        @include for-tablet-portrait {
+            height: 412px;
         }
     }
 
@@ -42,6 +63,12 @@
         background-image: url('../../assets/img/projects/projects-bg.png');
         .container {
             height: 685px;
+            @include for-tablet-portrait {
+                height: 412px;
+            }
+        }
+        @include for-tablet-portrait {
+            height: 412px;
         }
     }
 

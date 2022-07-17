@@ -30,6 +30,41 @@ $(document).ready(function(){
         'arrows': true,
         nextArrow: $(document).find('.cert__arrow_left'),
         prevArrow: $(document).find('.cert__arrow_right'),
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 375,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: true,
+                dots: true
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     }); 
 
 });

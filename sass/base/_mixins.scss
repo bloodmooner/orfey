@@ -1,5 +1,7 @@
 
-
+@mixin for-phone-small-375 {
+  @media (max-width: 375px) { @content; }
+}
 
 @mixin for-phone-small {
   @media (max-width: 420px) { @content; }
