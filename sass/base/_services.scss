@@ -56,7 +56,12 @@
 .services__tab {
     padding-bottom: 24px;
     cursor: pointer;
-
+    @include for-tablet-portrait {
+        padding-bottom: 16px;
+    }
+    @include for-phone-portrait {
+        padding-bottom: 11px;
+    }
     p {
         font-style: normal;
         font-weight: 500;

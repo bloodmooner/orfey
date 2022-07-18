@@ -67,6 +67,9 @@ $(document).ready(function(){
           ]
     }); 
 
+
+    
+
     //Tabs toggle
     $('ul.services__tabs').on('click', 'li:not(.services__tab_active)', function() {
       $(this)
@@ -75,27 +78,35 @@ $(document).ready(function(){
     });
 
     //Tabs animation
-    const tabsContainer = document.querySelector(".services__tabs-container"),
-    tabs = tabsContainer.querySelectorAll("li"),
-    selector = tabsContainer.querySelector(".selector");
+    const tabsContainer = document.querySelector(".services__tabs-container");
+
+    if(tabsContainer) {
+      const tabs = tabsContainer.querySelectorAll("li");
+      const selector = tabsContainer.querySelector(".selector");
 
 
-    function animationSelector () {
-    let activeItem = tabsContainer.querySelector("li.active");
-    selector.style.width = activeItem.offsetWidth + "px";
-    selector.style.left = activeItem.offsetLeft + "px";
+      
+
+
+      function animationSelector () {
+      let activeItem = tabsContainer.querySelector("li.active");
+      selector.style.width = activeItem.offsetWidth + "px";
+      selector.style.left = activeItem.offsetLeft + "px";
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabsContainer.querySelector("li.active").classList.remove("active");
+          tab.classList.add("active");
+          animationSelector();
+        });
+      });
+
+      animationSelector();
+
     }
 
-    tabs.forEach(tab => {
-      tab.addEventListener("click", () => {
-        tabsContainer.querySelector("li.active").classList.remove("active");
-        tab.classList.add("active");
-        animationSelector();
-      });
-    });
-
-    animationSelector();
-
+    
 
 
 
@@ -117,6 +128,18 @@ $(document).ready(function(){
     });
 
     
+
+
+
+    $('.js-open-modal').on('click', function(){
+      $('.overlays').addClass('overlays_active');
+      $('.modal').addClass('modal_active');
+    });
+   
+    $('.modal__close').on('click', function(){
+      $('.overlays').removeClass('overlays_active');
+      $('.modal').removeClass('modal_active');
+    });
 
 });
 
