@@ -22,7 +22,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
-        @include for-phone {
+        @include for-phone-portrait {
             grid-template-columns: 1fr;
         }
     }

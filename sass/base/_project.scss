@@ -1,6 +1,13 @@
 .projects {
     margin-top: 80px;
     margin-bottom: 100px;
+    @include for-tablet-portrait {
+        margin-top: 52px;
+        margin-bottom: 65px;
+    }
+    @include for-phone-portrait {
+        margin-top: 27px;
+    }
     &__wrapper {
     }
 
@@ -22,6 +29,12 @@
 
     &__tab {
         padding-bottom: 24px;
+        @include for-tablet-portrait {
+            padding-bottom: 14px;
+        }
+        @include for-phone-portrait {
+            padding-bottom: 11px;
+        }
         p {
             font-style: normal;
             font-weight: 500;
@@ -29,6 +42,14 @@
             line-height: 41px;
             text-transform: uppercase;
             color: #424242; 
+            @include for-tablet-portrait {
+                font-size: 24px;
+                line-height: 33px;
+            }
+            @include for-phone-portrait {
+                font-size: 18px;
+                line-height: 25px;
+            }
         }
         &_active {
             position: relative;
@@ -41,12 +62,21 @@
                 height: 8px;
                 background: #4164F7;
                 border-radius: 39px;
+                @include for-phone-portrait {
+                    height: 5px;
+                }
             }
         }
     }
 
     &__tab-list {
         margin-top: 80px;
+        @include for-tablet-portrait {
+            margin-top: 72px;
+        }
+        @include for-phone-portrait {
+            margin-top: 47px;
+        }
     }
 
     &__tab-item {
@@ -57,12 +87,28 @@
         &:nth-child(1) {
             margin-top: 0;
         }
+        @include for-tablet-portrait {
+            margin-top: 60px;
+        }
+        @include for-phone-portrait {
+            margin-top: 34px;
+        }
     }
 
     &__tab-body {
         display: grid;
         grid-template-columns: 455px 1fr;
         gap: 110px;
+        @include for-desk {
+            grid-template-columns: 1fr;
+            gap: 60px;
+        }
+        @include for-tablet-portrait {
+            gap: 45px;
+        }
+        @include for-phone-portrait {
+            gap: 30px;
+        }
     }
 
     &__name {
@@ -85,6 +131,11 @@
             background: #4164F7;
             border-radius: 2px;
         }
+        @include for-phone-portrait {
+            padding-left: 13px;
+            font-size: 20px;
+            line-height: 27px;
+        }
     }
 
     &__location {
@@ -100,6 +151,14 @@
         display: grid;
         grid-template-columns: 175px 355px 388px;
         justify-content: space-between;
+        @include for-tablet-portrait {
+            grid-template-columns: 130px 230px 294px;
+            margin-bottom: 16px;
+        }
+        @include for-phone-portrait {
+            display: none;
+            margin-bottom: 1px;
+        }
     }
 
     &__top-el {
@@ -110,6 +169,14 @@
             line-height: 29px;
             text-transform: uppercase;
             color: #2C2C2C;
+            @include for-tablet-portrait {
+                font-size: 20px;
+                line-height: 27px;
+            }
+            @include for-phone-portrait {
+                font-size: 18px;
+                line-height: 25px;
+            }
         }
     }
 
@@ -121,6 +188,18 @@
         display: grid;
         grid-template-columns: 175px 355px 388px;
         justify-content: space-between;
+        @include for-tablet-portrait {
+            grid-template-columns: 130px 230px 294px;
+        }
+        @include for-phone-portrait {
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            grid-template-columns: 1fr;
+            border-bottom: 1px solid #E8E8E8;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__line-el {
@@ -129,5 +208,29 @@
         font-size: 20px;
         line-height: 27px;
         color: #646464;
+        @include for-tablet-portrait {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @include for-phone-portrait {
+            margin-top: 20px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__line-title {
+        display: none;
+        @include for-phone-portrait {
+            display: block;
+            margin-bottom: 1px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #292929;
+        }
     }
 }

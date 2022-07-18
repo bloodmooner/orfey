@@ -1,6 +1,13 @@
 .services {
     margin-top: 80px;
     margin-bottom: 100px;
+    @include for-tablet-portrait {
+        margin-top: 52px;
+        margin-bottom: 65px;
+    }
+    @include for-phone-portrait {
+        margin-top: 27px;
+    }
 }
 .services__wrapper {
 }
@@ -10,7 +17,20 @@
 .services__tabs-container {
     position: relative;
     border-bottom: 2px solid #ECECEC;
+    
 }
+
+.services__tabs-elems {
+    @include for-tablet-portrait {
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include for-phone-portrait {
+        max-width: 320px;
+    }
+}
+
 .services__tabs-container .selector {
     position: absolute;
 	bottom: -5px;
@@ -21,6 +41,10 @@
 	background: #4164F7;
 	border-radius: 39px;
 	transition: .3s ease-in-out;
+    @include for-phone-portrait {
+        bottom: -3px;
+        height: 5px;
+    }
 }
 .services__tabs {
     max-width: 1000px;
@@ -40,6 +64,14 @@
         line-height: 41px;
         text-transform: uppercase;
         color: #424242; 
+        @include for-tablet-portrait {
+            font-size: 24px;
+            line-height: 33px;
+        }
+        @include for-phone-portrait {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 }
 
@@ -56,14 +88,24 @@
     margin-top: 15px;
     padding: 45px 0;
     border-bottom: 2px solid #ECECEC;
+    @include for-tablet-portrait {
+        padding: 30px 0;
+        margin-top: 4px;
+    }
+    @include for-phone-portrait {
+        padding: 25px 0;
+    }
 }
 .services__tab-stage {
 }
 .services__tab-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 41px;
+    gap: 30px;
     cursor: pointer;
+    @include for-tablet-portrait {
+        grid-template-columns: 1fr 30px;
+    }
 }
 .services__tab-name {
     font-style: normal;
@@ -71,8 +113,13 @@
     font-size: 22px;
     line-height: 30px;
     color: #424242;
+    @include for-phone-portrait {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 .services__tab-icon {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,8 +128,16 @@
     background: #F1F5FF;
     border-radius: 50%;
 
+    @include for-phone-portrait {
+        width: 30px;
+        height: 30px;
+    }
+    
     img {
         transition: all 0.5s;
+        @include for-phone-portrait {
+            width: 13px;
+        }
     }
     
 }
@@ -94,6 +149,12 @@
 .services__tab-body {
     display: none;
     margin-top: 35px;
+    @include for-tablet-portrait {
+        margin-top: 22px;
+    }
+    @include for-phone-portrait {
+        margin-top: 17px;
+    }
 }
 .services__tab-listitem {
     position: relative;
@@ -118,6 +179,12 @@
         height: 5px;
         border-radius: 100%;
         background: #4164F7;
+    }
+
+    @include for-phone-portrait {
+        padding-left: 13px;
+        margin-top: 15px;
+        font-size: 16px;
     }
 }
 

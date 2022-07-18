@@ -95,5 +95,20 @@
         line-height: 75px;
         text-transform: uppercase;
         color: #FFFFFF;
+        @include for-tablet-landscape {
+            padding: 0 45px;
+        }
+        @include for-tablet-portrait {
+            padding: 0 24px;
+            font-size: 40px;
+            line-height: 55px;
+        }
+        @include for-phone-portrait {
+            font-size: 32px;
+            line-height: 44px;
+        }
+        @include for-phone {
+            padding: 0 15px;
+        }
     }
 }
