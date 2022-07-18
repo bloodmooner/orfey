@@ -115,21 +115,42 @@
 
     &__item {
         margin-top: 24px;
+        padding-left: 45px;
+        position: relative;
         &:nth-child(1) {
             margin-top: 0;
         }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 33px;
+            height: 33px;
+            background-image: url('../../assets/svg/checkmark2.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include for-phone-portrait {
+                width: 27px;
+                height: 27px;
+            }
+        }
         @include for-phone-portrait {
+            padding-left: 35px;
             margin-top: 21px;
         }
     }
 
     &__text {
+        padding-top: 2px;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 27px;
         color: #646464;
         @include for-phone-portrait {
+            padding-top: 1px;
             font-size: 18px;
             line-height: 25px;
         }
