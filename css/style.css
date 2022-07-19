@@ -844,6 +844,10 @@ ul.submenu li a {
 }
 
 ul.submenu li a:hover {
+  text-decoration: underline;
+}
+
+ul.submenu li a:hover {
   /* background:rgba(0,0,0,.3); */
 }
 

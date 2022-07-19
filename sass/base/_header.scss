@@ -169,6 +169,9 @@
     /* box-shadow:0 -1px rgba(0,0,0,.5) inset; */
     transition:background .3s;
     white-space:nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   
   ul.submenu li a:hover{
