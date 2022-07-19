@@ -75,6 +75,13 @@ $(document).ready(function(){
       $(this)
         .addClass('services__tab_active').siblings().removeClass('services__tab_active')
         .closest('div.services__content').find('div.services__tab-list').removeClass('open').eq($(this).index()).addClass('open');
+
+        $('.services__tab-body').slideUp(400);
+        $('.services__tab-icon').removeClass('services__tab-icon_active');
+
+        $('.open').find('.services__tab-item:nth-child(1) .services__tab-body').slideDown(400);
+        $('.open').find('.services__tab-item:nth-child(1) .services__tab-icon').addClass('services__tab-icon_active');
+      
     });
 
     //Tabs animation
