@@ -111,6 +111,11 @@ $(document).ready(function(){
 
       animationSelector();
 
+
+      $(window).on('resize', function(){
+        animationSelector();
+      });
+
     }
 
     
