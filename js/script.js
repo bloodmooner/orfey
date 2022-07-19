@@ -11,7 +11,6 @@ $(document).ready(function(){
    
      openMenuButton.click(function() {
        menuContainer.addClass("header-mobile_active");
-       console.log('open');
      });
    
      closeMenuButton.click(function() {
