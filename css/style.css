@@ -470,7 +470,7 @@ template {
 }
 
 .footer__wrapper {
-  padding: 40px 0;
+  padding: 31px 0 40px 0;
 }
 
 .footer__top {
@@ -492,6 +492,14 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.footer__logo {
+  width: 68px;
+}
+
+.footer__logo img {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -555,8 +563,13 @@ template {
   color: #FFFFFF;
 }
 
+.footer__contact {
+  padding-right: 19px;
+}
+
 @media (max-width: 1200px) {
   .footer__contact {
+    padding-right: initial;
     margin-top: 28px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -590,6 +603,10 @@ template {
 .footer__contact-mail:hover {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.footer__bottom {
+  /* margin-top: 36px; */
 }
 
 @media (max-width: 1200px) {
@@ -645,7 +662,7 @@ template {
 }
 
 .header__wrapper {
-  padding: 22px 0;
+  padding: 24px 0 27px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,6 +675,7 @@ template {
 }
 
 .header__content {
+  margin-right: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2603,8 +2621,8 @@ ul.submenu li a:hover {
 }
 
 .contacts {
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 77px;
+  padding-bottom: 107px;
   background: #F5F8FF;
 }
 
@@ -2623,7 +2641,7 @@ ul.submenu li a:hover {
 }
 
 .contacts__item {
-  margin-top: 60px;
+  margin-top: 54px;
   padding-left: 22px;
   padding-top: 5px;
   position: relative;
@@ -2652,6 +2670,7 @@ ul.submenu li a:hover {
 }
 
 .contacts__title {
+  margin-top: -2px;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -2662,6 +2681,7 @@ ul.submenu li a:hover {
 
 @media (max-width: 767px) {
   .contacts__title {
+    margin-top: initial;
     font-size: 20px;
     line-height: 27px;
   }
@@ -2669,7 +2689,7 @@ ul.submenu li a:hover {
 
 .contacts__text {
   display: block;
-  margin-top: 8px;
+  margin-top: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;

@@ -2,7 +2,7 @@
     background: #4164F7;
     border-radius: 0px;
     &__wrapper {
-        padding: 40px 0;
+        padding: 31px 0 40px 0;
     }
 
     &__top {
@@ -15,6 +15,10 @@
     }
 
     &__logo {
+        width: 68px;
+        img {
+            width: 100%;
+        }
         @include for-tablet-landscape {
             display: none;
         }
@@ -61,7 +65,9 @@
     }
 
     &__contact {
+        padding-right: 19px;
         @include for-tablet-landscape {
+            padding-right: initial;
             margin-top: 28px;
             display: flex;
             flex-direction: column;
@@ -90,6 +96,7 @@
     }
 
     &__bottom {
+        /* margin-top: 36px; */
         @include for-tablet-landscape {
             display: flex;
             flex-direction: column;
