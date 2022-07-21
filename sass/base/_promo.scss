@@ -8,6 +8,7 @@
 
     &_index {
         background-image: url('../assets/img/index/promo-img.png');
+        height: 963px;
         @include for-tablet-landscape {
             height: 685px;
         }

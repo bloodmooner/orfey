@@ -1603,6 +1603,7 @@ ul.submenu li a:hover {
 
 .promo_index {
   background-image: url("../assets/img/index/promo-img.png");
+  height: 963px;
 }
 
 @media (max-width: 1200px) {
@@ -1838,6 +1839,7 @@ ul.submenu li a:hover {
 }
 
 .about__text {
+  padding-top: 5px;
   max-width: 1210px;
   width: 100%;
 }
@@ -1941,7 +1943,7 @@ ul.submenu li a:hover {
 }
 
 .advantages__title_second {
-  margin-left: 90px;
+  margin-left: 105px;
 }
 
 @media (max-width: 767px) {
@@ -2060,7 +2062,7 @@ ul.submenu li a:hover {
 
 .workwith {
   background: #F5F8FF;
-  padding: 180px 0 145px 0;
+  padding: 186px 0 145px 0;
 }
 
 @media (max-width: 991px) {
@@ -2076,12 +2078,10 @@ ul.submenu li a:hover {
 }
 
 .workwith__title-main {
+  display: none;
   position: relative;
   margin-bottom: 40px;
   padding-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2096,6 +2096,9 @@ ul.submenu li a:hover {
 
 @media (max-width: 767px) {
   .workwith__title-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 30px;
     font-size: 27px;
     padding-left: 12px;
@@ -2165,7 +2168,7 @@ ul.submenu li a:hover {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  max-width: 726px;
+  max-width: 733px;
   width: 100%;
   padding: 72px 56px;
   background: #FFFFFF;
@@ -2221,7 +2224,7 @@ ul.submenu li a:hover {
 }
 
 .workwith__item {
-  margin-top: 24px;
+  margin-top: 25px;
   padding-left: 45px;
   position: relative;
 }
@@ -2275,7 +2278,7 @@ ul.submenu li a:hover {
 }
 
 .workwith__btn {
-  margin-top: 44px;
+  margin-top: 46px;
   padding: 20px 27px;
   border: 2px solid #4164F7;
   background-color: transparent;
@@ -2302,7 +2305,7 @@ ul.submenu li a:hover {
 }
 
 .cert {
-  margin-bottom: 100px;
+  margin-bottom: 97px;
   background: #F5F8FF;
 }
 
@@ -2369,7 +2372,7 @@ ul.submenu li a:hover {
 }
 
 .cert__title_second {
-  margin-left: 90px;
+  margin-left: 130px;
 }
 
 @media (max-width: 767px) {
@@ -2381,7 +2384,7 @@ ul.submenu li a:hover {
 .cert__slider {
   margin: 60px auto 0 auto;
   position: relative;
-  max-width: 1480px;
+  max-width: 1494px;
   /* the slides */
   /* the parent */
 }
@@ -2399,7 +2402,7 @@ ul.submenu li a:hover {
 }
 
 .cert__slider .slick-slide {
-  margin: 0 65px;
+  margin: 0 57px;
 }
 
 @media (max-width: 1650px) {
@@ -2415,7 +2418,7 @@ ul.submenu li a:hover {
 }
 
 .cert__slider .slick-list {
-  margin: 0 -65px;
+  margin: 0 -57px;
 }
 
 @media (max-width: 1650px) {
@@ -2496,12 +2499,12 @@ ul.submenu li a:hover {
 
 .cert__arrow {
   position: absolute;
-  top: 50%;
+  top: 47%;
   cursor: pointer;
 }
 
 .cert__arrow_left {
-  left: -60px;
+  left: -76px;
 }
 
 @media (max-width: 1650px) {
@@ -2958,7 +2961,7 @@ ul.submenu li a:hover {
 
 .services__tab-body {
   display: none;
-  margin-top: 35px;
+  margin-top: 21px;
 }
 
 @media (max-width: 991px) {
@@ -3008,7 +3011,7 @@ ul.submenu li a:hover {
 }
 
 .projects {
-  margin-top: 80px;
+  margin-top: 64px;
   margin-bottom: 100px;
 }
 
@@ -3102,7 +3105,7 @@ ul.submenu li a:hover {
 }
 
 .projects__tab-list {
-  margin-top: 80px;
+  margin-top: 86px;
 }
 
 @media (max-width: 991px) {
@@ -3118,7 +3121,7 @@ ul.submenu li a:hover {
 }
 
 .projects__tab-stage {
-  margin-top: 95px;
+  margin-top: 69px;
 }
 
 .projects__tab-stage:nth-child(1) {
@@ -3253,7 +3256,7 @@ ul.submenu li a:hover {
 }
 
 .projects__line {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 175px 355px 388px;

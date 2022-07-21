@@ -1,5 +1,5 @@
 .projects {
-    margin-top: 80px;
+    margin-top: 64px;
     margin-bottom: 100px;
     @include for-tablet-portrait {
         margin-top: 52px;
@@ -70,7 +70,7 @@
     }
 
     &__tab-list {
-        margin-top: 80px;
+        margin-top: 86px;
         @include for-tablet-portrait {
             margin-top: 72px;
         }
@@ -83,7 +83,7 @@
     }
 
     &__tab-stage {
-        margin-top: 95px;
+        margin-top: 69px;
         &:nth-child(1) {
             margin-top: 0;
         }
@@ -184,7 +184,7 @@
     }
 
     &__line {
-        margin-bottom: 28px;
+        margin-bottom: 30px;
         display: grid;
         grid-template-columns: 175px 355px 388px;
         justify-content: space-between;

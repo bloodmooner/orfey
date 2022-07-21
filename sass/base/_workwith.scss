@@ -1,6 +1,6 @@
 .workwith {
     background: #F5F8FF;
-    padding: 180px 0 145px 0;
+    padding: 186px 0 145px 0;
     @include for-tablet-portrait {
         padding: 37px 0 70px 0;
     }
@@ -11,10 +11,10 @@
     }
 
     &__title-main {
+        display: none;
         position: relative;
         margin-bottom: 40px;
         padding-left: 20px;
-        display: flex;
         flex-direction: column;
         font-style: normal;
         font-weight: 700;
@@ -23,6 +23,7 @@
         text-transform: uppercase;
         color: #424242;
         @include for-phone-portrait {
+            display: flex;
             margin-bottom: 30px;
             font-size: 27px;
             padding-left: 12px;
@@ -72,7 +73,7 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        max-width: 726px;
+        max-width: 733px;
         width: 100%;
         padding: 72px 56px;
         background: #FFFFFF;
@@ -114,7 +115,7 @@
     }
 
     &__item {
-        margin-top: 24px;
+        margin-top: 25px;
         padding-left: 45px;
         position: relative;
         &:nth-child(1) {
@@ -157,7 +158,7 @@
     }
 
     &__btn {
-        margin-top: 44px;
+        margin-top: 46px;
         padding: 20px 27px;
         border: 2px solid #4164F7;
         background-color: transparent;

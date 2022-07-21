@@ -25,6 +25,7 @@ $(document).ready(function(){
      // Mobile Menu END
 
     $('.cert__items').slick({
+        'infinite': true,
         'slidesToShow': 4,
         'arrows': true,
         nextArrow: $(document).find('.cert__arrow_left'),

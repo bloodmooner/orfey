@@ -1,5 +1,5 @@
 .cert {
-    margin-bottom: 100px;
+    margin-bottom: 97px;
     background: #F5F8FF;
     @include for-tablet-portrait {
         margin-bottom: 65px;
@@ -45,7 +45,7 @@
         }
 
         &_second {
-            margin-left: 90px;
+            margin-left: 130px;
             @include for-phone-portrait {
                 margin-left: 14vw;
             }
@@ -55,7 +55,7 @@
     &__slider {
         margin: 60px auto 0 auto;
         position: relative;
-        max-width: 1480px;
+        max-width: 1494px;
         @include for-tablet-portrait {
             margin: 48px auto 0 auto;
         }
@@ -65,7 +65,7 @@
 
           /* the slides */
         .slick-slide {
-            margin: 0 65px;
+            margin: 0 57px;
             @include for-desk {
                 margin: 0 20px;
             }
@@ -76,7 +76,7 @@
 
         /* the parent */
         .slick-list {
-            margin: 0 -65px;
+            margin: 0 -57px;
             @include for-desk {
                 margin: 0 -20px;
             }
@@ -140,10 +140,10 @@
 
     &__arrow {
         position: absolute;
-        top: 50%;
+        top: 47%;
         cursor: pointer;
         &_left {
-            left: -60px;
+            left: -76px;
             @include for-desk {
                 left: -30px;
             }
