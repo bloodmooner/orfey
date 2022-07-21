@@ -55,6 +55,10 @@
         font-size: 18px;
         line-height: 25px;
         color: #373737;
+        &:hover {
+          text-decoration: none;
+          color: #373737;
+        }
     }
 
     &__dropdown {

@@ -477,12 +477,14 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items: center; */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* display: grid;
+        grid-template-columns: 69px 852px 236px;
+        justify-content: space-between;
+        align-items: center; */
 }
 
 @media (max-width: 1200px) {
@@ -505,6 +507,16 @@ template {
 @media (max-width: 1200px) {
   .footer__logo {
     display: none;
+  }
+}
+
+.footer__nav {
+  margin-top: 12px;
+}
+
+@media (max-width: 991px) {
+  .footer__nav {
+    margin-top: initial;
   }
 }
 
@@ -565,6 +577,7 @@ template {
 
 .footer__contact {
   padding-right: 19px;
+  padding-top: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -581,6 +594,12 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer__contact {
+    padding-top: initial;
   }
 }
 
@@ -636,7 +655,7 @@ template {
 }
 
 .footer__copyright {
-  margin-top: 24px;
+  margin-top: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,6 +666,7 @@ template {
 }
 
 .footer__copyright-item {
+  padding-right: 145px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -655,9 +675,25 @@ template {
   color: #FFFFFF;
 }
 
+.footer__copyright-item:nth-child(2) {
+  padding-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .footer__copyright-item:nth-child(2) {
+    padding-top: initial;
+  }
+}
+
 @media (max-width: 1200px) {
   .footer__copyright-item:nth-child(2) {
     margin-top: 11px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__copyright-item {
+    padding-right: initial;
   }
 }
 
@@ -732,6 +768,11 @@ template {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  color: #373737;
+}
+
+.header__link:hover {
+  text-decoration: none;
   color: #373737;
 }
 
@@ -2606,7 +2647,7 @@ ul.submenu li a:hover {
 }
 
 .tech__bottom {
-  margin-top: 83px;
+  margin-top: 58px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
