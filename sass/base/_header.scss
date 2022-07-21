@@ -131,7 +131,7 @@
   }
   
   /*hide the inputs*/
-  input{display:none}
+  .header input{display:none}
   
   /*show the second levele menu of the selected voice*/
   input:checked ~ ul.submenu{

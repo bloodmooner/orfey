@@ -851,7 +851,7 @@ input:checked ~ label:after {
 }
 
 /*hide the inputs*/
-input {
+.header input {
   display: none;
 }
 
